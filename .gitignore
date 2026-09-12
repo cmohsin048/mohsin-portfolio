@@ -1,0 +1,16 @@
+node_modules/
+.next/
+.next-review/
+tmp/
+out/
+.env*
+!.env.example
+*.tsbuildinfo
+next-env.d.ts
+.DS_Store
+
+# Internal working notes - kept locally, not published
+GITHUB_REVIEW.md
+github-profile/
+cv/original/
+/Mohsin_Raza_Resume.pdf
