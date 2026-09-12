@@ -17,30 +17,28 @@ export function Contact() {
         <p className="mt-8 max-w-xl text-lg leading-relaxed opacity-80">
           {site.contactText}
         </p>
-        <div className="mt-10 flex flex-wrap items-center gap-4">
+        <div className="mt-10 flex flex-wrap items-center gap-x-6 gap-y-4">
           <Magnetic>
             <a
-              href={site.upwork}
-              target="_blank"
-              rel="noreferrer"
+              href={`mailto:${site.email}?subject=${subject}&body=${body}`}
               className="group inline-flex items-center gap-2 rounded-full bg-ink px-7 py-4 text-base font-semibold text-paper transition hover:bg-paper hover:text-ink"
             >
-              Hire me on Upwork <ArrowUpRight size={18} className="transition group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
+              Email me <ArrowUpRight size={18} className="transition group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
             </a>
           </Magnetic>
-          <Magnetic strength={0.2}>
-            <a href={`mailto:${site.email}?subject=${subject}&body=${body}`} className="link-line display text-xl sm:text-2xl">
-              {site.email}
-            </a>
-          </Magnetic>
+          {/* body font, not the wide display face: the address must fit a 390px screen */}
+          <a href={`mailto:${site.email}`} className="link-line max-w-full break-all text-base font-semibold sm:text-lg">
+            {site.email}
+          </a>
         </div>
       </div>
 
       <footer className="mx-auto mt-20 flex w-full max-w-6xl flex-col gap-4 border-t border-ink/20 pt-6 font-mono text-xs uppercase tracking-wider sm:flex-row sm:items-center sm:justify-between">
         <p>© {new Date().getFullYear()} {site.name} · {site.location}</p>
-        <div className="flex gap-6">
+        <div className="flex flex-wrap gap-x-6 gap-y-3">
           <a href={site.github} target="_blank" rel="noreferrer" className="link-line">GitHub</a>
           <a href={site.linkedin} target="_blank" rel="noreferrer" className="link-line">LinkedIn</a>
+          <a href={site.upwork} target="_blank" rel="noreferrer" className="link-line">Upwork</a>
           <a href={site.resume} download className="link-line">Resume</a>
           <a href="#top" className="link-line">Top ↑</a>
         </div>

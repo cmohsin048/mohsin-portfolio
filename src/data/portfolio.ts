@@ -9,7 +9,7 @@ export const site = {
   role: "MERN Stack Developer",
   tagline: "MERN stack developer building production web apps, AI features and Web3 interfaces.",
   introduction: "Marketplaces, SaaS products, LLM-backed tools and Solana dApps—from the schema and API to the interface and deployment.",
-  contactText: "Tell me about your project, timeline and the help you need. We can discuss the scope and next steps over email or Upwork.",
+  contactText: "Tell me about the role or project, your timeline and what you need. Email is the fastest way to reach me.",
   location: "Islamabad, Pakistan",
   timezone: "Asia/Karachi",
   email: "cmohsin048@gmail.com",
@@ -20,7 +20,7 @@ export const site = {
   upwork: "https://www.upwork.com/freelancers/~mohsinraza",
   resume: "/Mohsin_Raza_Resume.pdf",
   url: "https://mohsinrazadev.vercel.app",
-  availability: "Open for freelance work",
+  availability: "Open to full-time roles & freelance",
 };
 
 export const stats = [
