@@ -57,8 +57,8 @@
   <dt>Real-time</dt><dd>Socket.io, WebSockets, BullMQ / Redis, node-cron, IMAP &amp; mail parsing</dd>
   <dt>AI</dt><dd>OpenAI API, LLM feature development, MCP servers, crisis &amp; content detection</dd>
   <dt>Web3</dt><dd>Solana web3.js, wallet adapters, SPL Token, signature auth, Hardhat, Chainlink VRF</dd>
-  <dt>Mobile</dt><dd>React Native, Expo, Kotlin, Jetpack Compose, MVVM + Hilt</dd>
   <dt>Databases</dt><dd>MongoDB, PostgreSQL, Supabase, Firebase, MySQL</dd>
+  <dt>Mobile</dt><dd>React Native, Expo (shared Node API); native Android in Kotlin</dd>
   <dt>Cloud &amp; DevOps</dt><dd>AWS (EC2, S3), Docker, Vercel, Linux, PM2, Nginx, Git, Jira (Scrum/Agile)</dd>
   <dt>Integrations</dt><dd>Stripe, Twilio (Video &amp; Voice), AWS S3, Sanity, Google &amp; Microsoft OAuth</dd>
 </dl>
@@ -75,7 +75,8 @@
     <li>Primary developer of <strong>RAIDS AI</strong>, a real-time LLM integrity monitoring platform that detects rogue model behaviours and deviations from established norms &mdash; leading both the React front end and the Express/MongoDB API, with scheduled analysis jobs, Stripe billing and OAuth sign-in.</li>
     <li>Sole developer of <strong>ColdWave</strong>, a multi-tenant cold email marketing SaaS on Next.js and MongoDB, with AI-assisted campaign copy, spam checks, mailbox rotation and rate limiting, and IMAP reply tracking.</li>
     <li>Lead developer of <strong>Project Vault</strong>, an internal secrets and documentation manager with per-project access control, AES-256-GCM encryption at rest, database-backed sessions, full audit logging, and an MCP server with personal API tokens for AI client access.</li>
-    <li>Co-led the native Android customer portal for a national electricity utility in Kotlin and Jetpack Compose, contributing over 350 commits across billing, payments and supply management (detailed below).</li>
+    
+    <li>Co-led the native Android client for a national electricity utility (Kotlin, Jetpack Compose) &mdash; 350+ commits, with Microsoft Entra ID sign-in, encrypted token storage and certificate pinning.</li>
     <li>Implemented Web3 wallet integration and smart contract interactions for <strong>Arena Two</strong>, a blockchain-based live gaming platform.</li>
     <li>Deployed and operated services on AWS and Linux with PM2, Nginx and Docker. Worked in Agile/Scrum teams using Jira for sprint planning and cross-team collaboration.</li>
   </ul>
@@ -109,9 +110,6 @@ Spot and service booking marketplace with web and mobile clients. Hosts, service
 
 <div class="proj"><span class="proj-name">RAIDS AI</span> &mdash; <span class="proj-stack">React, Node.js, Express, MongoDB</span><br>
 Real-time LLM integrity monitoring that detects rogue model behaviours and deviations from established norms in production AI systems. Primary developer across front end and API.</div>
-
-<div class="proj"><span class="proj-name">Enterprise Utility Android App</span> &mdash; <span class="proj-stack">Kotlin, Jetpack Compose, MVVM, Hilt, Retrofit</span><br>
-Native customer portal for a national electricity provider covering billing, supply management, payments and fault reporting. MVVM with clean architecture and Hilt dependency injection, a Retrofit client stack with per-service interceptor chains, Microsoft Entra ID (MSAL) sign-in, encrypted token storage, certificate pinning and a custom JSON localisation layer. Over 350 commits across two product flavours.</div>
 
 <div class="proj"><span class="proj-name">AbilityConnect</span> &mdash; <span class="proj-stack">React, Node.js, MongoDB, Redis, Twilio Video</span><br>
 Accessible video interview platform for people with disabilities, used by employers including Meta. Built to WCAG 2.1 AA with seven roles including interpreters and booth admins, real-time queue management over Socket.io, and Twilio Programmable Video with interpreter support.</div>

@@ -12,8 +12,6 @@ next-env.d.ts
 # Internal working notes - kept locally, not published
 GITHUB_REVIEW.md
 github-profile/
-cv/original/
-/Mohsin_Raza_Resume.pdf
 
 .vercel
 .env*
