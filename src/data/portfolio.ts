@@ -28,12 +28,11 @@ export const stats = [
 ];
 
 export const manifesto =
-  "MongoDB, Express, React and Node, end to end. I build marketplaces, SaaS products and AI-backed tools, ship them to production, and keep them running after launch.";
+  "I build marketplaces, SaaS products and AI-backed tools on the MERN stack — and keep them running after launch.";
 
 export const aboutDetail = [
   "Core stack: MongoDB, Express, React and Node, with TypeScript and Next.js on top. Stripe for payments, Socket.io where things need to be live, and OpenAI where a product genuinely benefits from a model rather than a rule.",
-  "On the AI side I have built LLM integrity monitoring, an OpenAI-backed wellness companion and an MCP server that lets assistants query a project backlog. On the Web3 side, Solana wallet authentication and SPL token flows, plus Solidity contracts tested with Hardhat.",
-  "I also ship mobile — React Native against the same Node API, and native Kotlin with Jetpack Compose. I studied Computer Science at the Institute of Space Technology, Islamabad.",
+  "I led RAIDS AI, a real-time LLM integrity monitor, and built an MCP server with scoped API tokens so assistants can query an internal system directly. On the Web3 side, Solana wallet authentication and SPL token flows. I ship mobile too — React Native on the same Node API, and native Kotlin with Jetpack Compose.",
 ];
 
 export type SkillGroup = { title: string; items: string[] };

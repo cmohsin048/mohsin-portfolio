@@ -34,7 +34,7 @@ export default async function Home() {
           <Hero />
         </Panel>
         <Panel id="about" tone="paper" index={1}>
-          <About publicRepos={activity.publicRepos} ownedRepos={activity.ownedRepos} accessibleRepos={activity.accessibleRepos} />
+          <About />
         </Panel>
         <Work index={2} />
         <Panel id="github" tone="paper" index={3}>

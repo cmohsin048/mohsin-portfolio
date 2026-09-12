@@ -8,7 +8,7 @@ import { aboutDetail, manifesto, services, stats } from "@/data/portfolio";
 
 gsap.registerPlugin(ScrollTrigger);
 
-export function About({ publicRepos, ownedRepos, accessibleRepos }: { publicRepos: number | null; ownedRepos: number | null; accessibleRepos: number | null }) {
+export function About() {
   const ref = useRef<HTMLDivElement>(null);
 
   useGSAP(
@@ -61,28 +61,25 @@ export function About({ publicRepos, ownedRepos, accessibleRepos }: { publicRepo
   const words = manifesto.split(" ");
 
   return (
-    <div ref={ref} className="px-5 py-24 sm:px-8 sm:py-32">
+    <div ref={ref} className="px-5 py-16 sm:px-8 sm:py-16">
       <div className="mx-auto max-w-6xl">
-        <p className="eyebrow mb-8">01 — About</p>
-        <p className="display max-w-5xl text-[7.5vw] leading-[1] sm:text-[3.6vw]">
+        <p className="eyebrow mb-4">01 — About</p>
+        <p className="display max-w-4xl text-[6.5vw] leading-[1.02] sm:text-[2.5vw]">
           {words.map((w, i) => (
             <span key={i} className="scrub-word">{w}&nbsp;</span>
           ))}
         </p>
 
-        <div className="mt-16 grid gap-12 lg:grid-cols-[1fr_1fr]">
-          <div className="space-y-5 text-base leading-relaxed opacity-80 sm:text-lg">
+        <div className="mt-10 grid gap-10 lg:grid-cols-[1.6fr_1fr]">
+          <div className="space-y-4 text-base leading-relaxed opacity-80">
             {aboutDetail.map((p) => <p key={p.slice(0, 16)}>{p}</p>)}
           </div>
-          <dl className="grid grid-cols-2 gap-x-6 gap-y-8 self-start">
-            {[...stats,
-              { value: ownedRepos ?? publicRepos, suffix: "", label: ownedRepos !== null ? "repositories I own" : "public GitHub repositories" },
-              { value: accessibleRepos, suffix: "", label: "repositories I can access" },
-            ].map((s) => (
+          {/* GitHub repo counts live in the GitHub section only - do not duplicate them here */}
+          <dl className="self-start">
+            {stats.map((s) => (
               <div key={s.label} className="border-t border-ink/20 pt-4">
-                <dd className="display text-5xl sm:text-6xl">
-                  {s.value === null ? <span title="Requires an authenticated GitHub connection">—</span> : <span className="stat-num" data-value={s.value}>{s.value.toLocaleString()}</span>}
-                  {s.suffix}
+                <dd className="display text-4xl sm:text-5xl">
+                  <span className="stat-num" data-value={s.value}>{s.value.toLocaleString()}</span>{s.suffix}
                 </dd>
                 <dt className="mt-2 text-sm opacity-70">{s.label}</dt>
               </div>
@@ -90,12 +87,12 @@ export function About({ publicRepos, ownedRepos, accessibleRepos }: { publicRepo
           </dl>
         </div>
 
-        <ul className="mt-20 divide-y divide-ink/15 border-y border-ink/15">
+        <ul className="mt-10 divide-y divide-ink/15 border-y border-ink/15">
           {services.map((s) => (
-            <li key={s.n} className="service-row grid gap-2 py-6 sm:grid-cols-[4rem_1fr_1.4fr] sm:items-baseline sm:gap-6">
+            <li key={s.n} className="service-row grid gap-1 py-4 sm:grid-cols-[3rem_1fr_1.5fr] sm:items-baseline sm:gap-6">
               <span className="font-mono text-xs opacity-50">{s.n}</span>
-              <h3 className="display text-2xl sm:text-3xl">{s.title}</h3>
-              <p className="text-sm leading-relaxed opacity-75 sm:text-base">{s.text}</p>
+              <h3 className="display text-xl sm:text-2xl">{s.title}</h3>
+              <p className="text-sm leading-relaxed opacity-75">{s.text}</p>
             </li>
           ))}
         </ul>
