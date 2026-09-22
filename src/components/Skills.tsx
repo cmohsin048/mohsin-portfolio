@@ -15,10 +15,12 @@ export function Skills() {
       <ul className="mx-auto mt-12 max-w-6xl border-t border-paper/15">
         {skills.map((g, i) => (
           <li key={g.title} className="skill-row border-b border-paper/15">
-            <div className="grid gap-2 px-5 py-6 sm:grid-cols-[4rem_14rem_1fr] sm:items-baseline sm:px-8">
+            <div className="grid gap-2 px-5 py-6 sm:grid-cols-[4rem_1fr] sm:items-baseline sm:gap-x-6 sm:px-8 lg:grid-cols-[4rem_23rem_1fr] lg:gap-x-10">
               <span className="font-mono text-xs opacity-50">0{i + 1}</span>
-              <h3 className="display text-2xl sm:text-3xl">{g.title}</h3>
-              <p className="text-sm leading-relaxed opacity-75 sm:text-base">{g.items.join(" · ")}</p>
+              <h3 className="display text-2xl sm:text-3xl lg:whitespace-nowrap">{g.title}</h3>
+              <p className="text-sm leading-relaxed opacity-75 sm:col-start-2 sm:text-base lg:col-start-3">
+                {g.items.join(" · ")}
+              </p>
             </div>
           </li>
         ))}
