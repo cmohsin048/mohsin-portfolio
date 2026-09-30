@@ -154,7 +154,7 @@ export const projects: Project[] = [
     description:
       "Fund database with search and filters, SIP return projections comparing two funds side by side, and interactive performance charts. Next.js on Supabase, fed by a scheduled collector that ingests MUFAP NAV data.",
     tags: ["Next.js", "TypeScript", "Supabase", "Recharts", "Vercel"],
-    live: "https://investing-mauve.vercel.app",
+    live: "https://www.islamicfunds.pk",
     hue: 150,
   },
   {
