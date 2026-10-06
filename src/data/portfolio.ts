@@ -7,7 +7,7 @@ export const site = {
   firstName: "Mohsin",
   lastName: "Raza",
   role: "MERN Stack Developer",
-  tagline: "MERN stack developer building production web apps, AI features and Web3 interfaces.",
+  tagline: "Full stack developer building production web apps, AI features and Web3 interfaces.",
   introduction: "Marketplaces, SaaS products, LLM-backed tools and Solana dApps—from the schema and API to the interface and deployment.",
   contactText: "Tell me about the role or project, your timeline and what you need. Email is the fastest way to reach me.",
   location: "Islamabad, Pakistan",
