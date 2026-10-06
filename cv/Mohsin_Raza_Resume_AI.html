@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Mohsin Raza - AI Developer (Python, LLM Applications)</title>
+<style>
+  @page { size: A4; margin: 13mm 14mm; }
+  * { box-sizing: border-box; }
+  body {
+    font-family: "Calibri", "Segoe UI", system-ui, sans-serif;
+    font-size: 10pt; line-height: 1.38; color: #1a1a1a; margin: 0;
+    -webkit-print-color-adjust: exact; print-color-adjust: exact;
+  }
+  h1 { font-size: 22pt; margin: 0; letter-spacing: .4px; font-weight: 700; }
+  .role { font-size: 11.5pt; color: #2b5c8a; font-weight: 600; margin: 1px 0 5px; letter-spacing: .3px; }
+  .contact { font-size: 9pt; color: #333; }
+  .contact a { color: #2b5c8a; text-decoration: none; }
+  .contact span.sep { color: #aaa; padding: 0 5px; }
+  header { border-bottom: 2px solid #2b5c8a; padding-bottom: 7px; margin-bottom: 9px; }
+  h2 {
+    font-size: 9.8pt; text-transform: uppercase; letter-spacing: 1.6px; color: #2b5c8a;
+    margin: 13px 0 6px; padding-bottom: 2px; border-bottom: .8px solid #c9d6e2; font-weight: 700;
+    break-after: avoid;
+  }
+  p { margin: 0 0 4px; text-align: justify; }
+  ul { margin: 3px 0 0; padding-left: 15px; }
+  li { margin-bottom: 3px; }
+  .skills { display: grid; grid-template-columns: 118px 1fr; gap: 3px 9px; font-size: 9.6pt; }
+  .skills dt { font-weight: 700; color: #333; }
+  .skills dd { margin: 0; }
+  .job { margin-bottom: 8px; }
+  .job-head { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; break-after: avoid; }
+  .job-title { font-weight: 700; font-size: 10.2pt; }
+  .job-meta { font-size: 9pt; color: #555; white-space: nowrap; }
+  .proj { margin-bottom: 7px; break-inside: avoid; }
+  .proj-name { font-weight: 700; color: #2b5c8a; }
+  .proj-stack { color: #555; font-size: 9.2pt; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>MOHSIN RAZA</h1>
+  <div class="role">AI Developer &mdash; Python &amp; LLM Applications</div>
+  <div class="contact">
+    Islamabad, Pakistan<span class="sep">|</span>+92 345 650 7620<span class="sep">|</span><a href="mailto:cmohsin048@gmail.com">cmohsin048@gmail.com</a><span class="sep">|</span><a href="https://www.linkedin.com/in/mohsinraza048">linkedin.com/in/mohsinraza048</a><span class="sep">|</span><a href="https://github.com/cmohsin048">github.com/cmohsin048</a>
+  </div>
+</header>
+
+<h2>Professional Summary</h2>
+<p>Developer with 2+ years shipping production software, focused on building real products on top of large language models. I have built an LLM integrity monitoring platform that flags rogue model behaviour, a GPT support chatbot and an LLM email parser for a travel product, MCP servers that give AI clients safe access to internal data, and a multi-provider (Claude, Gemini, Ollama) video pipeline with Whisper transcription and computer vision. Strong Python and Node.js backend skills underneath &mdash; REST APIs, PostgreSQL and MongoDB, background jobs, auth, Docker and AWS &mdash; plus React and Next.js to put AI features in front of users.</p>
+
+<h2>Technical Skills</h2>
+<dl class="skills">
+  <dt>LLMs &amp; GenAI</dt><dd>OpenAI, Anthropic Claude, Google Gemini and Ollama (local) APIs; prompt design, structured JSON output, LLM-based classification, extraction and scoring, chatbots, multi-provider model switching</dd>
+  <dt>AI Tooling</dt><dd>Model Context Protocol (MCP) servers and tools, token-scoped AI client access, LLM output monitoring and deviation detection, Claude Code</dd>
+  <dt>Speech &amp; Vision</dt><dd>faster-whisper (word-level transcripts), OpenCV face detection and tracking, audio analysis, ffmpeg</dd>
+  <dt>Python</dt><dd>Python 3, Flask, FastAPI, pymongo, requests, Selenium, web scraping, data pipelines and scheduled ETL, CLI tools</dd>
+  <dt>Backend</dt><dd>Node.js, Express.js, TypeScript, REST API design, webhooks, Socket.io, BullMQ / Redis job queues, node-cron</dd>
+  <dt>Databases</dt><dd>PostgreSQL, MongoDB, MySQL, Supabase, Redis &mdash; schema design, indexing, caching</dd>
+  <dt>Frontend</dt><dd>React, Next.js (App Router, SSR), Tailwind CSS, TanStack Query, Redux Toolkit</dd>
+  <dt>Cloud &amp; DevOps</dt><dd>AWS (EC2, S3), Docker, Linux, Nginx, PM2, Vercel, Git &amp; GitHub, Jira (Scrum/Agile)</dd>
+  <dt>Security</dt><dd>AES-256-GCM encryption at rest, MongoDB client-side field encryption, OAuth 2.0, session auth, audit logging</dd>
+</dl>
+
+<h2>Work Experience</h2>
+
+<div class="job">
+  <div class="job-head">
+    <span class="job-title">Full Stack Developer (AI products) &mdash; Kakushin</span>
+    <span class="job-meta">Islamabad &middot; 2024 &ndash; Present</span>
+  </div>
+  <ul>
+    <li>Primary developer of <strong>RAIDS AI</strong>, a real-time LLM integrity monitoring platform that detects rogue model behaviours and deviations from established norms in production AI systems &mdash; led the analysis API (Node.js, Express, MongoDB) with scheduled analysis jobs, and the React dashboard, Stripe billing and OAuth sign-in.</li>
+    <li>Built the <strong>AI features of Paiback</strong>, a flight price tracking and rebooking product: a GPT-powered support chatbot for refund and booking-status questions, and an OpenAI email parser that turns unstructured airline emails into structured booking data &mdash; on a Flask and MongoDB backend with Sabre/Amadeus fare lookups and client-side encryption of passenger data.</li>
+    <li>Lead developer of <strong>Project Vault</strong>, an internal secrets and documentation manager with an <strong>MCP server</strong> so AI clients can read project knowledge through personal API tokens, behind per-project access control, AES-256-GCM encryption and full audit logging.</li>
+    <li>Sole developer of <strong>ColdWave</strong>, a multi-tenant cold-email SaaS with AI-assisted campaign copy, spam checks, mailbox rotation, per-tenant rate limiting and IMAP reply tracking (Next.js, MongoDB, OpenAI).</li>
+    <li>Led the Python backend for <strong>EventSage</strong> (event planning on PostgreSQL/Supabase) and built across the React client and Express API of <strong>Bookmi</strong>, a multi-role booking marketplace with Stripe and real-time chat.</li>
+    <li>Deployed and operated these services on AWS EC2 and Linux with Docker, Nginx and PM2. Worked in Agile/Scrum teams with Jira, code reviews and architecture discussions.</li>
+  </ul>
+</div>
+
+<div class="job">
+  <div class="job-head">
+    <span class="job-title">MERN Stack Developer, Internship &mdash; Eziline Software House</span>
+    <span class="job-meta">Islamabad &middot; 2023</span>
+  </div>
+  <ul>
+    <li>Developed backend APIs and full-stack features with Node.js, Express, React and MongoDB; contributed to bug fixing and endpoint optimisation.</li>
+  </ul>
+</div>
+
+<div class="job">
+  <div class="job-head">
+    <span class="job-title">Frontend Developer, Internship &mdash; NextSalution</span>
+    <span class="job-meta">Islamabad &middot; 2022</span>
+  </div>
+  <ul>
+    <li>Built responsive React components and integrated REST APIs with the backend team.</li>
+  </ul>
+</div>
+
+<h2>AI Projects</h2>
+
+<div class="proj">
+  <span class="proj-name">Clipper &mdash; AI video clipping pipeline</span> <span class="proj-stack">&middot; Python, Claude / Gemini / Ollama, faster-whisper, OpenCV, ffmpeg</span>
+  <p>CLI that turns long videos into captioned 9:16 shorts on a CPU-only laptop. Whisper word-level transcripts and audio reaction spikes feed an LLM that over-generates clip candidates with sub-scores for hook, payoff, standalone value, emotion and risk; a weighted ranking picks the final clips, with switchable Claude, Gemini or local Ollama models. OpenCV face detection drives active-speaker crops, then word-by-word captions and single-pass ffmpeg renders.</p>
+</div>
+
+<div class="proj">
+  <span class="proj-name">RAIDS AI &mdash; LLM integrity monitoring</span> <span class="proj-stack">&middot; Node.js, Express, MongoDB, React, Stripe</span>
+  <p>Monitors production LLM systems for rogue behaviour and deviations from established norms. Scheduled analysis jobs, deviation detection, a React monitoring dashboard, subscription billing and OAuth sign-in. Primary developer across the API and front end.</p>
+</div>
+
+<div class="proj">
+  <span class="proj-name">Paiback &mdash; GPT chatbot &amp; email parser</span> <span class="proj-stack">&middot; Python, Flask, OpenAI, MongoDB, Stripe, Next.js</span>
+  <p>LLM features inside a flight rebooking product: a support chatbot answering refund and booking-status questions, and an airline email parser extracting structured fields from unstructured emails, alongside GDS pricing and refund workflows.</p>
+</div>
+
+<div class="proj">
+  <span class="proj-name">upwork-profile-mcp &mdash; MCP server</span> <span class="proj-stack">&middot; Python, Model Context Protocol, GitHub API</span>
+  <p>MCP server and CLI that gives an AI assistant 8 tools to scan local projects and GitHub history, build a scored skills inventory, and draft profile titles, keywords, overviews and portfolio items, with secrets (.env files, keys) always excluded from scans.</p>
+</div>
+
+<div class="proj">
+  <span class="proj-name">Project Vault &mdash; MCP access to internal knowledge</span> <span class="proj-stack">&middot; Next.js, TypeScript, MongoDB, MCP</span>
+  <p>Secrets and documentation manager whose MCP server lets AI clients query project documentation with personal API tokens, with per-project access control, AES-256-GCM encryption at rest and audit logging down to the acting user.</p>
+</div>
+
+<div class="proj">
+  <span class="proj-name">islamicfunds.pk &amp; MUFAP data pipeline</span> <span class="proj-stack">&middot; Next.js, PostgreSQL (Supabase), Node.js, Playwright</span>
+  <p>Mutual fund comparison platform backed by a collection pipeline covering 331 funds: 26,989 matched historical payout records, fund identity reconciliation and automated regression tests, served through cached, server-rendered Next.js pages.</p>
+</div>
+
+<h2>Education</h2>
+<p><strong>Bachelor of Computer Science</strong> &mdash; Institute of Space Technology, Islamabad &middot; 2024</p>
+
+</body>
+</html>

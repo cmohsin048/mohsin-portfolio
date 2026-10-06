@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Mohsin Raza - Full Stack Developer (Python / React)</title>
+<style>
+  @page { size: A4; margin: 13mm 14mm; }
+  * { box-sizing: border-box; }
+  body {
+    font-family: "Calibri", "Segoe UI", system-ui, sans-serif;
+    font-size: 10pt; line-height: 1.38; color: #1a1a1a; margin: 0;
+    -webkit-print-color-adjust: exact; print-color-adjust: exact;
+  }
+  h1 { font-size: 22pt; margin: 0; letter-spacing: .4px; font-weight: 700; }
+  .role { font-size: 11.5pt; color: #2b5c8a; font-weight: 600; margin: 1px 0 5px; letter-spacing: .3px; }
+  .contact { font-size: 9pt; color: #333; }
+  .contact a { color: #2b5c8a; text-decoration: none; }
+  .contact span.sep { color: #aaa; padding: 0 5px; }
+  header { border-bottom: 2px solid #2b5c8a; padding-bottom: 7px; margin-bottom: 9px; }
+  h2 {
+    font-size: 9.8pt; text-transform: uppercase; letter-spacing: 1.6px; color: #2b5c8a;
+    margin: 13px 0 6px; padding-bottom: 2px; border-bottom: .8px solid #c9d6e2; font-weight: 700;
+    break-after: avoid;
+  }
+  p { margin: 0 0 4px; text-align: justify; }
+  ul { margin: 3px 0 0; padding-left: 15px; }
+  li { margin-bottom: 3px; }
+  .skills { display: grid; grid-template-columns: 118px 1fr; gap: 3px 9px; font-size: 9.6pt; }
+  .skills dt { font-weight: 700; color: #333; }
+  .skills dd { margin: 0; }
+  .job { margin-bottom: 8px; }
+  .job-head { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; break-after: avoid; }
+  .job-title { font-weight: 700; font-size: 10.2pt; }
+  .job-meta { font-size: 9pt; color: #555; white-space: nowrap; }
+  .proj { margin-bottom: 7px; break-inside: avoid; }
+  .proj-name { font-weight: 700; color: #2b5c8a; }
+  .proj-stack { color: #555; font-size: 9.2pt; }
+  .page-break { break-before: page; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>MOHSIN RAZA</h1>
+  <div class="role">Full Stack Developer (Python / React)</div>
+  <div class="contact">
+    Islamabad, Pakistan<span class="sep">|</span>+92 345 650 7620<span class="sep">|</span><a href="mailto:cmohsin048@gmail.com">cmohsin048@gmail.com</a><span class="sep">|</span><a href="https://www.linkedin.com/in/mohsinraza048">linkedin.com/in/mohsinraza048</a><span class="sep">|</span><a href="https://github.com/cmohsin048">github.com/cmohsin048</a>
+  </div>
+</header>
+
+<h2>Professional Summary</h2>
+<p>Full stack developer with 2+ years building production web applications, with a backend focus in Python (Flask, FastAPI) and Node.js and front ends in React and Next.js. I own features end to end &mdash; REST API design, PostgreSQL and MongoDB schemas, auth and encryption, payments, background jobs, Docker and AWS deployment &mdash; and wire them into the React clients that consume them. Shipped a Flask pricing and refund backend for a travel product, a Python backend with a React client for an event-planning platform, and React + API work across several multi-role SaaS products. Comfortable in Agile teams, code reviews and architecture discussions.</p>
+
+<h2>Technical Skills</h2>
+<dl class="skills">
+  <dt>Python</dt><dd>Python 3, Flask, FastAPI, REST APIs, pymongo, Selenium, requests, web scraping, scheduled ETL, OpenAI SDK, OpenCV</dd>
+  <dt>Frontend</dt><dd>React, Next.js (App Router, server components, SSR and cached revalidation), TypeScript, Redux Toolkit, TanStack Query, Tailwind CSS, React Native</dd>
+  <dt>Node.js</dt><dd>Node.js, Express.js, Mongoose, Socket.io, BullMQ / Redis, node-cron</dd>
+  <dt>Databases</dt><dd>PostgreSQL, MySQL, MongoDB, Supabase, Redis &mdash; schema design, indexing, query optimisation, caching, migrations</dd>
+  <dt>APIs &amp; Auth</dt><dd>REST design &amp; versioning, webhooks, OAuth 2.0 (Google, Microsoft Entra ID), JWT and session auth, rate limiting</dd>
+  <dt>Cloud &amp; DevOps</dt><dd>AWS (EC2, S3), Docker, Linux, Nginx, PM2, Vercel, Git &amp; GitHub (branching, pull requests), Jira (Scrum/Agile)</dd>
+  <dt>Quality</dt><dd>Unit and integration testing, Postman, code review, debugging and profiling, structured logging, audit trails, documentation</dd>
+  <dt>Security</dt><dd>AES-256-GCM at rest, MongoDB client-side field encryption, httpOnly session cookies, certificate pinning</dd>
+  <dt>Integrations &amp; AI</dt><dd>Stripe, Twilio, Sabre / Amadeus GDS, IMAP, S3; OpenAI and Claude APIs, LLM chatbots and parsers, MCP servers</dd>
+</dl>
+
+<h2>Work Experience</h2>
+
+<div class="job">
+  <div class="job-head">
+    <span class="job-title">Full Stack Developer &mdash; Kakushin</span>
+    <span class="job-meta">Islamabad &middot; 2024 &ndash; Present</span>
+  </div>
+  <ul>
+    <li>Built the <strong>Flask backend for Paiback</strong>, a flight price tracking and rebooking product: fare lookups against Sabre and Amadeus GDS, refund and booking-status workflows, a GPT support chatbot and an OpenAI-powered airline email parser, MongoDB with client-side field encryption for passenger data, and Stripe-vs-database reconciliation scripts. Also contributed to its Next.js / TypeScript front end.</li>
+    <li>Led the <strong>Python backend for EventSage</strong>, an event-planning and supplier-management platform on Supabase (PostgreSQL): proposal and invoice services, CSV/XLSX lead import pipeline, Twilio voice and OTP flows, PDF export and Stripe subscription billing, integrated with the React client.</li>
+    <li>Primary developer of <strong>RAIDS AI</strong>, a real-time LLM integrity monitoring platform &mdash; led both the React front end and the Node.js/Express/MongoDB API, with scheduled analysis jobs, deviation detection, Stripe billing and OAuth sign-in.</li>
+    <li>Core contributor to <strong>Bookmi</strong>, a multi-role booking marketplace &mdash; built across the React web client, React Native app and shared Express/MongoDB API: booking lifecycle, Stripe webhooks, real-time chat, calendar sync and English/Greek localisation.</li>
+    <li>Lead developer of <strong>Project Vault</strong>, an internal secrets manager in Next.js and TypeScript: per-project access control, AES-256-GCM encryption at rest, database-backed sessions, full audit logging and an MCP server with personal API tokens.</li>
+    <li>Sole developer of <strong>ColdWave</strong>, a multi-tenant cold-email SaaS on Next.js and MongoDB: mailbox rotation, per-tenant rate limiting and IMAP reply tracking.</li>
+    <li>Deployed and operated these services on AWS EC2 and Linux with Docker, Nginx and PM2. Worked in Agile/Scrum teams with Jira and Git pull-request workflows, taking part in sprint planning, code reviews and architecture discussions with QA and product.</li>
+  </ul>
+</div>
+
+<div class="job">
+  <div class="job-head">
+    <span class="job-title">MERN Stack Developer, Internship &mdash; Eziline Software House</span>
+    <span class="job-meta">Islamabad &middot; 2023</span>
+  </div>
+  <ul>
+    <li>Developed backend APIs and full-stack features with Node.js, Express, React and MongoDB; contributed to bug fixing and endpoint optimisation.</li>
+  </ul>
+</div>
+
+<div class="job">
+  <div class="job-head">
+    <span class="job-title">Frontend Developer, Internship &mdash; NextSalution</span>
+    <span class="job-meta">Islamabad &middot; 2022</span>
+  </div>
+  <ul>
+    <li>Built responsive React components and integrated REST APIs with the backend team.</li>
+  </ul>
+</div>
+
+<h2>Projects</h2>
+
+<div class="proj">
+  <span class="proj-name">Paiback</span> <span class="proj-stack">&middot; Python, Flask, MongoDB, OpenAI, Stripe, Sabre / Amadeus, Next.js</span>
+  <p>Flight price tracking and rebooking product. Flask backend for GDS pricing, refunds and booking-status workflows, a GPT support chatbot, an airline email parser and encrypted passenger data, consumed by a Next.js front end.</p>
+</div>
+
+<div class="proj">
+  <span class="proj-name">EventSage</span> <span class="proj-stack">&middot; Python, PostgreSQL (Supabase), React, Stripe, Twilio</span>
+  <p>Event planning and supplier-management platform. Python services for proposals, supplier invoices, CSV/XLSX lead import and PDF export on a relational PostgreSQL schema, with Twilio voice/OTP and Stripe subscription billing, serving a React client with drag-and-drop boards and a reusable proposal builder.</p>
+</div>
+
+<div class="proj">
+  <span class="proj-name">islamicfunds.pk</span> <span class="proj-stack">&middot; Next.js, TypeScript, PostgreSQL (Supabase), Recharts</span>
+  <p>Shariah-compliant mutual fund comparison platform for Pakistan. Server-rendered Next.js App Router pages with cached data and time-based revalidation to cut database load, fund search and filters, interactive performance charts, and SIP return projections comparing funds side by side.</p>
+</div>
+
+<div class="proj">
+  <span class="proj-name">RAIDS AI</span> <span class="proj-stack">&middot; React, Node.js, Express, MongoDB, Stripe</span>
+  <p>Real-time LLM integrity monitoring that detects rogue model behaviours and deviations from established norms in production AI systems. Primary developer across the React dashboard and the API.</p>
+</div>
+
+<div class="proj">
+  <span class="proj-name">Bookmi</span> <span class="proj-stack">&middot; React, React Native, Node.js, Express, MongoDB, Stripe</span>
+  <p>Spot and service booking marketplace with web and mobile clients for hosts, service providers, customers and admins: full booking lifecycle, ratings and reviews, cart, Stripe webhooks and real-time chat.</p>
+</div>
+
+<div class="proj">
+  <span class="proj-name">MUFAP Data Collectors</span> <span class="proj-stack">&middot; Node.js, Cheerio, Playwright, PostgreSQL (Supabase)</span>
+  <p>Fund catalog, NAV and payout collection targeting 331 funds, feeding islamicfunds.pk. Historical import of 26,989 matched payout records across 127 quarterly ranges, with fund identity reconciliation, database readback and automated regression tests.</p>
+</div>
+
+<div class="proj">
+  <span class="proj-name">Food Delivery Data Scraper</span> <span class="proj-stack">&middot; Python, Selenium, Flask</span>
+  <p>Headless browser scraper exposed through a Flask POST API. Extracts restaurant details, menu categories, products, prices, images and modal-based add-ons, with explicit waits, missing-element handling and downloadable JSON output.</p>
+</div>
+
+<div class="proj">
+  <span class="proj-name">Clipper &mdash; AI video clipping tool</span> <span class="proj-stack">&middot; Python, faster-whisper, OpenCV, ffmpeg, Claude / Gemini / Ollama</span>
+  <p>CLI that turns long videos into captioned 9:16 shorts on a CPU-only laptop: Whisper word-level transcripts, LLM highlight picking, face tracking with active-speaker crops, word-by-word captions and single-pass ffmpeg renders.</p>
+</div>
+
+<h2>Education</h2>
+<p><strong>Bachelor of Computer Science</strong> &mdash; Institute of Space Technology, Islamabad &middot; 2024</p>
+
+</body>
+</html>
