@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   title,
   description,
   keywords: [
-    "Full-Stack Developer", "Next.js Developer", "React Developer", "Node.js", "MongoDB", "React Native",
+    "Full-Stack Developer", "Full Stack AI Developer", "RAG", "LLM applications", "Next.js Developer", "React Developer", "Node.js", "MongoDB", "React Native",
     "OpenAI integration", "Stripe integration", "SaaS development", "Islamabad", "Upwork freelancer",
   ],
   authors: [{ name: site.name, url: site.github }],
