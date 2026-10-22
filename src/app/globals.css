@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+/* Pinned horizontal project scroll needs a tall enough screen; short / zoomed-in laptops get a grid instead.
+   Keep in sync with the matchMedia query in Work.tsx. */
+@custom-variant pin (@media (min-width: 1024px) and (min-height: 800px));
+
 @theme inline {
   --color-ink: var(--ink);
   --color-ink-2: var(--ink-2);
